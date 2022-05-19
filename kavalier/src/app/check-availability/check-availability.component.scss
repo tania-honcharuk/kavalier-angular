@@ -1,0 +1,54 @@
+@import '../../styles.scss';
+ 
+@mixin timetable {
+  height: 190px;
+  border: 1px solid $border-grey;
+}
+
+div.mat-form-field-appearance-fill .mat-form-field-flex {
+  background: transparent;
+  border-radius: 4px 4px 0 0;
+  padding: 0.75em 0.75em 0 0.75em;
+}
+
+.timetable-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  h6 {
+    height: 29px;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: font(main-font);
+    font-weight: weight(normal);
+    letter-spacing: space(big);
+    text-transform: uppercase;
+    color: $text-grey;
+  }
+  .date-block {
+    width: 23.5%;
+    @include timetable;
+    
+  }
+  .guest-block {
+    width: 12%;
+    @include timetable;
+  }
+  .check-block {
+    width: 23.5%;
+    @include timetable;
+    @include center;
+  
+    .check-btn {
+      height: 55px;
+      width: 242px;
+      text-transform: uppercase;
+      color: $white;
+      background-color: $yellow;
+      border: none;
+      &:hover {
+        background-color: darken($yellow, 20%);
+      }
+    }
+  }
+}
