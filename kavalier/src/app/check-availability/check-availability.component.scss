@@ -52,3 +52,11 @@ div.mat-form-field-appearance-fill .mat-form-field-flex {
     }
   }
 }
+
+input.mat-input-element[_ngcontent-ocg-c105],
+.mat-input-element[_ngcontent-djx-c105],
+.cdk-text-field-autofill-monitored[_ngcontent-cix-c105]:not(:-webkit-autofill) {
+  font-family: Helvetica;
+  font-size: 18px;
+  animation: cdk-text-field-autofill-end 0s 1ms;
+}

@@ -2,18 +2,27 @@
   <div class="date-block arrive-block">
     <h6 class="timetable-title">Arrival date</h6>
     <mat-form-field appearance="fill">
-      <input matInput [matDatepicker]="picker">
-      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-      <mat-datepicker #picker></mat-datepicker>
+      <input matInput [matDatepicker]="picker" [formControl]="date">
+      <mat-datepicker-toggle matSuffix [for]="picker">
+        <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+      </mat-datepicker-toggle>
+      <mat-datepicker #picker startView="multi-year"
+      (monthSelected)="setMonthAndYear($event, picker)"
+      panelClass="example-month-picker"></mat-datepicker>
     </mat-form-field>
   </div>
   <div class="date-block departure-block">
     <h6 class="timetable-title">Departure date</h6>
     <mat-form-field appearance="fill">
-      <input matInput [matDatepicker]="picker">
-      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-      <mat-datepicker #picker></mat-datepicker>
-    </mat-form-field>  </div>
+      <input matInput [matDatepicker]="picker" [formControl]="date">
+      <mat-datepicker-toggle matSuffix [for]="picker">
+        <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+      </mat-datepicker-toggle>
+      <mat-datepicker #picker startView="multi-year"
+      (monthSelected)="setMonthAndYear($event, picker)"
+      panelClass="example-month-picker"></mat-datepicker>
+    </mat-form-field>
+  </div>
   <div class="guest-block adult-guest">
     <h6 class="timetable-title">Adults</h6>
     <span class="number"></span>
