@@ -1,0 +1,20 @@
+<nav class="rooms-menu">
+  <ul class="rooms-menu__list">
+    <li class="rooms-menu__list-item" *ngFor="let room of rooms">
+      <a class="rooms-menu__link app-a" href="#">{{ room.name }}</a>
+    </li>
+  </ul>
+</nav>
+<nav class="rooms-menu">
+  <ul class="rooms-menu__list">
+    <li class="rooms-menu__list-item" *ngFor="let room of rooms">
+      <a class="rooms-menu__link" href="#">
+        <div class="list-item__img-block">
+          <div class="list-item__img-gradient"></div>
+          <img class="list-item__img" src="{{ room.image }}" alt="">
+        </div>
+        <span class="list-item__title">{{ room.name }}</span>
+      </a>
+    </li>
+  </ul>
+</nav>

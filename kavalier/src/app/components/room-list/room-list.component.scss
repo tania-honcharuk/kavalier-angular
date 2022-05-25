@@ -1,0 +1,51 @@
+@import "../../../styles";
+
+.rooms-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  &__list {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  &__list-item {
+    list-style: none;
+  }
+  &__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &:active, &:visited {
+      color: $on-base;
+    }
+  }
+}
+
+.list-item {
+  &__img-block {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 20px;
+  }
+  &__img-gradient {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  }
+  &__img {
+    width: 100px;
+    height: 100px;
+  }
+  &__title {
+    max-width: 100px;
+    font-family: $base-font-family;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+  }
+}

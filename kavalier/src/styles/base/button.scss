@@ -1,0 +1,25 @@
+
+.app-button {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: normal;
+  border: 1px solid $primary;
+  background: $primary;
+  color: $base-light;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover, &:focus {
+    color: $primary;
+    background: $base-light;
+  }
+}
+
+.block-secondary-button {
+  border: 1px solid $secondary;
+  background: $secondary;
+  &:hover, &:focus {
+    color: $secondary;
+  }
+}

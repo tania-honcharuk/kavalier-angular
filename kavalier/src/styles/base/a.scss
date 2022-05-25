@@ -1,0 +1,15 @@
+.app-a {
+  color: $primary;
+  cursor: pointer;
+  font-family: $base-font-family;
+  font-size: 14px;
+  line-height: $base-line-height;
+  text-transform: uppercase;
+  &:hover {
+    color: darken($color: $primary, $amount: 5%);
+  }
+
+  &--active {
+    text-decoration: underline;
+  }
+}
